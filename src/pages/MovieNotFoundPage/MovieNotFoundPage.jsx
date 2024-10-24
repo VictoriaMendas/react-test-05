@@ -1,3 +1,9 @@
+import { Link } from "react-router-dom";
+
 export default function MovieNotFoundPage() {
-  return <div>MovieNotFoundPage</div>;
+  return (
+    <div>
+      <Link to="/">Go Back</Link>
+    </div>
+  );
 }
