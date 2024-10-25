@@ -4,8 +4,9 @@ import { useSearchParams } from "react-router-dom";
 import MovieList from "../../components/MovieList/MovieList";
 
 export default function MoviePage() {
-  const query = searchParams.get("query");
   const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get("query");
+
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);

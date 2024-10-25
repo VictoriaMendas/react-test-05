@@ -5,7 +5,7 @@ export default function Navigation() {
     <header>
       <nav>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/movie">Movie</NavLink>
+        <NavLink to="/movies">Movies</NavLink>
       </nav>
     </header>
   );

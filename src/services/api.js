@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "1091b85cfb1d620c2ad1642a2ab3f60a";
+// const API_KEY = "1091b85cfb1d620c2ad1642a2ab3f60a";
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.headers = {
@@ -14,7 +14,7 @@ export const fetchTredingMovie = async () => {
   return response.data;
 };
 export const fetchMovieByQuery = async (query) => {
-  const response = await axios.get("/search/movie/", {
+  const response = await axios.get("/search/movie", {
     params: { query: query },
   });
   console.log(response.data);
